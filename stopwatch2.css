@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+.mt-5{
+    border: white;
+    height: 200px;
+    border-radius: 10px;
+    background-image: linear-gradient(plum,rgb(216, 122, 103));
+    width: 85%;
+}
+
+#hour{
+    width: 30%;
+    font-size: 50px;
+    color: black;
+    margin-left: 10%;
+}
+
+#mins{
+    width: 30%;
+    margin-top: 7%;
+    font-size: 50px;
+    color: black;
+}
+
+#seconds{
+    width: 25%;
+    font-size: 50px;
+    color: black;
+}
+ 
+ #stt{
+    margin-left: 14%;
+} 
+
+#wait{
+    margin-left: 10%;
+}
+
+#reset{
+    margin-left: 8%;
+}  
+
+.btn{
+    margin-top: 5%;
+    background-color: rgba(104, 253, 253, 0.678);
+    border-color: rgb(170, 112, 112);
+    width: 20%;
+    font-size: 45%;
+}
+
+.btn:hover{
+    background-color: rgb(170, 112, 112);
+}

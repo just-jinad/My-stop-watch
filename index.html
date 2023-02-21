@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./stopWatch.css">
+    <link rel="stylesheet" media="(max-width: 688px)" href="stopwatch2.css">
+    <title>stopWatch</title>
+</head>
+<body class="">
+    <div class="mt-5 container ">
+        <h1>Stop Watch⏱️</h1>
+    <input class="rounded  shadow-lg border-info" type="number" placeholder="0:0" id="hour">
+    <input class="rounded  shadow-lg border-info" type="number" placeholder="0:0" id="mins">
+    <input class="rounded  shadow-lg border-info" type="number" placeholder="00" id="seconds">
+    <!-- <button onclick="countDown()">Start</button> -->
+    <button id="stt" class="btn border border-black text-white btn fw-bold" onclick="start()">Start</button>
+    <button id="wait" class="btn border border-black text-white btn fw-bold" onclick="stopWatch()">Pause</button>
+    <button id="reset" class="btn border border-black text-white btn fw-bold" onclick="reset()">Reset</button>
+    </div>
+    <!-- <div id="demo">3</div>
+        <div id="min">12</div> -->
+        
+        <script>
+            
+            const start = ()=>{
+                seconds.value++
+              pause= setTimeout(start, 50);
+                if(seconds.value==100){
+                    mins.value++
+                     seconds.value=0
+                }else if(mins.value==59){
+                 hour.value++
+                 mins.value=0
+                }
+                 
+            }
+               
+            const stopWatch = ()=>{
+               clearInterval(pause)
+            }
+
+            const reset = ()=>[
+            mins.value = "",
+            seconds.value = "",
+            hour.value = ""
+            ]
+        // let startMe=false;
+        // const start=()=>{
+        //     startMe=true
+        // }
+        // const btn=()=>{
+            
+        //     if (startMe) {
+        //         if (seconds.value && mins.value) {
+        //         // seconds.value=parseInt(seconds.value)-parseInt(1)
+        //         seconds.value--
+        //         clearInterva
+        //         l(seconds.value)
+        //     }
+            
+
+        //     if (seconds.value==0 && seconds.value) {
+        //         mins.value=mins.value-1
+            
+        //     }
+        //     }
+
+           
+             
+            
+    //     }
+    //    setInterval(() => {
+    //         btn()
+    //     }, 1000)
+
+
+
+
+        // const countDown = ()=>{
+        //     if(seconds.value >0){
+        //         seconds.value--
+        //         setTimeout(countDown, 1000);
+        //     }else if(mins.value >0 ){
+        //         mins.value--
+        //         setTimeout(countDown,1000);
+                
+        //     }
+        // }
+    </script>
+</body>
+</html>
